@@ -1,0 +1,11 @@
+<h1>Update student scores in the database</h1>
+<form action="{{ url_for("update_students")}}" method="post">
+    <label for="student_name">Name of Student:</label>
+    <input type="text" id="student_name" name="s_name" placeholder="student_name" />
+    <label for="student_id">Student ID:</label>
+    <input type="text" id="student_id" name="id" placeholder="student_id" />
+    <label for="student_score">New Score:</label>
+    <input type="text" id="student_score" name="new_score" placeholder="student_score" />
+    <button type="submit">Update</button>
+</form>
+<a href="/">home</a>

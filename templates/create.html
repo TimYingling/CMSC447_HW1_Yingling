@@ -1,0 +1,11 @@
+<h1>Add students to the database</h1>
+<form action="{{ url_for("add_new_students")}}" method="post">
+    <label for="student_name">Name of Student:</label>
+    <input type="text" id="student_name" name="s_name" placeholder="student_name" />
+    <label for="student_id">Student ID:</label>
+    <input type="text" id="student_id" name="id" placeholder="student_id" />
+    <label for="student_score">Student's Score:</label>
+    <input type="text" id="student_score" name="score" placeholder="student_score" />
+    <button type="submit">Register</button>
+</form>
+<a href="/">home</a>
